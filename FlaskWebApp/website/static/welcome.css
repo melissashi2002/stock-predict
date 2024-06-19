@@ -1,0 +1,634 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    min-height: 100vh;
+    min-width: 400px;
+    overflow: auto;
+    background-color: #0CAFFF; 
+    background-image: url('Frontend/images_bg.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
+header
+{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    height: 110px;
+    padding: 0 5%;
+    color: #fff;
+    font-size: 18px;
+    
+
+}
+header .Stock Prediction
+{
+    color: #fff;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-right: auto;
+ 
+    
+}
+header .Stock Prediction span
+{
+    color: #0CAFFF;
+   
+}
+header nav
+{
+    display: flex;
+    align-items: center;
+}
+header nav .menu
+{
+    display: flex;
+    align-items: center;
+}
+header nav .menu li a
+{
+    position: relative;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-left: 40px;
+    border-radius: 0.4rem;
+    transition: color 0.4s ease;
+    justify-content: center;
+}
+header nav .menu li a:hover
+{
+/* new change on the hover fontcolor */
+    color: black;
+
+    
+
+}
+header nav #toggle
+{
+    font-size: 1.3rem;
+    margin-left: 80px;
+    cursor: pointer;
+}
+.home
+{
+    padding: 0 5%;
+    text-align: center;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+}
+.home h1
+{
+    margin-top: 50px;
+    text-transform: uppercase;
+    font-size: 3.25rem;
+    font-weight: 600;
+
+}
+.home p
+{
+    font-size: 0.85rem;
+    font-weight: 300;
+    width: 600px;
+    margin: -5px auto 25px;
+    text-align: center;
+}
+.home button
+{
+    background-color: #1f0d37;
+    padding: 0.3rem 1.5rem;
+    outline: none;
+    border: 2px solid transparent;
+    border-radius: 6px;
+    color:#fff;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+}
+.home button:hover
+{
+    background-color: transparent;
+    border-color: #1f0d37;
+    color: #1f0d37;
+}
+.home .images .img-1,
+.home .images .img-2,
+.home .images .img-3,
+.home .images .img-4,
+.home .images .img-5,
+.home .images .img-6,
+.home .images .img-7
+{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index:  -10;
+/* new change on the particle */
+}
+.home {
+    min-height: 100vh;
+}
+
+
+/* education part*/
+.education-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4rem;
+    background-color: #ffffff; 
+    min-height: 600px; 
+    position: relative;
+  }
+  
+  .education-section .content {
+    max-width: 50%;
+  }
+  
+  .education-section .content h1 {
+    font-size: 2.5rem; 
+    margin-bottom: 1rem;
+  }
+  
+  .education-section .content p {
+    font-size: 1rem; 
+    margin-bottom: 2rem;
+  }
+  
+  .learn-more-btn {
+    text-decoration: none;
+    color: #0066ff; 
+    background: none;
+    border: 2px solid #0066ff; 
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .learn-more-btn:hover {
+    background-color: #0066ff; 
+    color: #fff;
+  }
+  
+  .images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .images .desktop {
+    width: 500px; 
+    margin-bottom: -100px; 
+  }
+  
+  .link-container {
+    position: absolute; 
+    right: 0; /* 定位到右下角 */
+    bottom: 0;
+    padding: 1rem; 
+    background-color: rgba(255, 255, 255, 0.5); 
+    
+  }
+  
+  .link-container a {
+    text-decoration: none;
+  }
+  
+  .link-container a:hover {
+    text-decoration: underline; 
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .education-section {
+      min-height: 800px;
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .education-section .content {
+      max-width: 100%;
+    }
+  
+    .images {
+      flex-direction: row;
+      justify-content: center;
+    }
+  
+    .images .desktop,
+    .images .mobile {
+      width: auto; /* Adjust for smaller screens */
+      max-width: 100%;
+      margin-bottom: 0;
+    }
+  }
+  
+
+
+
+
+/*team part*/
+.team-section {
+    padding: 4rem 0;
+    text-align: center;
+    background-color: #f5f5f5; 
+  }
+  
+  .team-section .container {
+    max-width: 1200px;
+    padding-top: 20px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+  }
+  
+  .team-member {
+    position: relative;
+    width: 250px; 
+    height: 251px; 
+    overflow: hidden;
+  }
+  
+  .team-member img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s ease;
+  }
+  
+  .team-member .overlay {
+    position: absolute;
+    bottom: 100%; /* Hide the overlay by default */
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Translucent black background */
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s ease;
+  }
+  
+  .team-member:hover .overlay {
+    bottom: 0;
+  }
+  
+  .overlay .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .social-icons {
+    position: absolute;
+    top: 70%; 
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+  
+  .social-icons a {
+    margin: 0 10px;
+    color: white; 
+    font-size: 24px; 
+  }
+  
+  
+  /* Responsive adjustments for smaller screens */
+  @media (max-width: 768px) {
+    .team-section .container {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+
+
+
+  .user-testimonials {
+    background-color: #acdadf; /* Change as needed */
+    text-align: center;
+    padding: 40px 0;
+  }
+  
+  .testimonial-container {
+    position: relative;
+    width: 100%;
+  }
+  
+  .testimonial {
+    display: none; /* Hide by default */
+    padding: 20px;
+    font-style: italic;
+  }
+  
+
+
+  .testimonial p {
+    margin-bottom: 1rem; 
+
+  }
+  
+  .testimonial span {
+    display: block; 
+    font-weight: bold;
+    margin-top: 0.5rem; /* Add top margin for additional space*/
+  }
+  
+
+
+
+
+  .testimonial.active {
+    display: block; /* Show the active testimonial */
+  }
+  
+  .controls {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .controls .prev,
+  .controls .next {
+    cursor: pointer;
+    margin: 0 10px;
+  }
+  
+  /* Rest of the styling */
+  
+
+
+
+
+
+
+
+
+
+
+
+  .footer {
+    color: #fff;
+    background-color: #000;
+    padding: 2rem;
+    font-family: Arial, sans-serif; /* Adjust the font to match the design */
+  }
+  
+  .footer-top {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .footer-links {
+    display: flex;
+  }
+  
+  .footer-links ul {
+    list-style: none;
+  }
+  
+  .footer-links li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .footer-signup {
+  }
+  
+  .footer-signup h2 {
+    color: #fff;
+  }
+  
+  .footer-signup p, .footer-signup input, .footer-signup select, .footer-signup button {
+    /* Add styles for the form elements */
+  }
+  
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+    border-top: 1px solid #444; /* Adjust color and thickness */
+    padding-top: 1rem;
+  }
+  
+  .social-links {
+  }
+  
+  .social-links a {
+    color: #fff;
+    margin-right: 0.5rem;
+  }
+  
+  
+
+
+
+#particles-js {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0; 
+  }
+  
+  .overlay-content {
+    position: relative;
+    z-index: 1; 
+  }
+  
+  header {
+    position: relative;
+    z-index: 2; 
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /*feedback tab*/
+  #feedback-tab {
+    position: fixed;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%) rotate(-90deg);
+    transform-origin: left top;
+    background: #ff4500;
+    color: white;
+    padding: 10px 40px; /* Adjust padding to increase the size */
+    cursor: pointer;
+    text-transform: uppercase; /* Optional: makes text uppercase */
+    z-index: 10; /* Ensure it's above other elements */
+  }
+  
+  
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0,0.4); /* Fallback color */
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 10% auto; /* control the modal's vertical positioning */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%; /* Decrease the width to make the frame narrower */
+    max-width: 400px;
+  }
+  
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .emoji-ratings span {
+    font-size: 24px; /* Adjust the size of emojis */
+    margin: 0 5px; /* Add spacing between emojis */
+    cursor: pointer;
+  }
+
+.emoji-ratings span.selected {
+  border: 2px solid #ff4500; 
+}
+
+
+textarea {
+  width: 100%; /* Make the textarea fill modal */
+  margin-top: 10px; /* Add some space above the textarea */
+}
+
+
+#send-feedback {
+  margin-top: 10px; /* Add some space above the button */
+}
+  
+.emoji-ratings {
+  display: flex;
+  justify-content: center;
+}
+
+.emoji {
+  font-size: 24px;
+  cursor: pointer;
+  padding: 0 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*背景图半透明滚动*/
+.alpha-section {
+  position: relative;
+  background-image: url('translucent_bg.jpg'); 
+  background-attachment: fixed; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif; 
+  
+}
+
+.alpha-section .content {
+  height: 350px;
+  position: relative;
+  background: rgba(255, 255, 255, 0.3); /* Semi-transparent */
+  color: #000; /* Text color */
+  padding: 50px 0;
+}
+
+
+
+
+.alpha-section h1 {
+  font-size: 4.5em; 
+  color: #ff4113;
+  font-weight: bold; 
+  margin: 0 0 20px; /* Adds space below the heading */
+  opacity: 1; /* Make sure it's fully visible */
+  transform: none; 
+  transition: none; 
+}
+
+.alpha-section p {
+  font-size: 1.2em; 
+  font-weight: bold;
+  color: #FFFFFF;
+  margin-bottom: 30px; 
+}
+
+.alpha-section button {
+  background-color: #FFD700; /* Gold color for the button */
+  color: #FFFFFF; /* Text color for the button */
+  border: none; 
+  padding: 10px 20px; 
+  font-size: 1em; 
+  border-radius: 5px; /* Rounds the corners */
+  cursor: pointer; /* Changes cursor to pointer */
+  transition: all 0.3s ease; 
+}
+
+.alpha-section button:hover {
+  background-color: #FFC107; 
+}
+

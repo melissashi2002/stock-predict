@@ -1,0 +1,55 @@
+{% extends "base.html" %} {% block title %}Course{% endblock %}
+
+{% block content%}
+<h2 align="center">Welcome to the data page, {{ user.email.split('@')[0] }}!</h1>
+<h2 align="center">Wanna retrieve a UIUC course's GPA info?</h1>
+
+<form action="/course" method="POST">
+    <div class="input-container">
+        <label for="form1-input">Subject</label>
+        <input type="text" name="subject" id="subject" placeholder="CS"></input>
+        <label for="form2-input">Course Number</label>
+        <input name="number" id="number" placeholder="124"></input>
+
+        <button type="submit" class="btn btn-primary"> Search Course</button>
+    </div>
+
+</form>
+
+
+
+
+<textarea readonly> {{info}}</textarea>
+
+<!-- Styles ===========================================-->
+<style>
+    textarea {
+      width: 100%;
+      height: 800px; 
+      resize: none; 
+      font-family: monospace; 
+    }
+</style>
+
+<style>
+    .input-container {
+      display: flex; /* Use flexbox for layout */
+    }
+
+    /* Style for each input field */
+    .input-container input {
+      flex: 1; /* Each input takes up equal space */
+      margin-right: 10px; /* Add some spacing between inputs */
+      margin-left: 10px;
+      margin-bottom: 10px;
+    }
+
+    .form {
+      flex: 1; /* Each form takes up equal space */
+      margin-right: 10px; /* Add some space between forms */
+    }
+
+  </style>
+
+
+{% endblock %}
